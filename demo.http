@@ -1,0 +1,8 @@
+POST http://localhost:6324/todo HTTP/1.1
+content-type: application/json
+
+{
+    "todo": "我是你爹",
+    "author": "peiqxin@gamil.com",
+    "description": "没有描述，这个是一个测试的描述"
+}

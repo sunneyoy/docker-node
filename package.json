@@ -1,0 +1,21 @@
+{
+  "name": "koa-docker",
+  "version": "1.1.0",
+  "description": "one koa simple and docker ",
+  "main": "app.js",
+  "author": "ToPeas",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.0.1",
+    "koa-router": "^7.2.1",
+    "mongoose": "^4.11.11"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.0"
+  }
+}

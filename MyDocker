@@ -11,6 +11,10 @@ FROM node:9.2.1-alpine
 RUN mkdir -p /app
 WORKDIR /app
 
+COPY package.json /app/ 
+COPY app.js /app
+COPY demo.http /app
+
 # Install app dependencies
 # COPY package.json /usr/app/
 # RUN alias cnpm="npm --registry=https://registry.npm.taobao.org \
@@ -28,4 +32,6 @@ RUN cnpm install --global typescript
 # Bundle app source
 # COPY . /usr/app
 
-CMD [ "npm","start" ]
+RUN cnpm i -g yarn && yarn 
+
+CMD [ "yarn","start" ]

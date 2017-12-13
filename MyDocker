@@ -32,6 +32,6 @@ RUN cnpm install --global typescript
 # Bundle app source
 # COPY . /usr/app
 
-RUN cnpm i -g yarn && yarn 
+RUN cnpm install
 
 CMD [ "yarn","start" ]
